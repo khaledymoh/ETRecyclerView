@@ -5,3 +5,4 @@
 * Drag/Swap to change item position & Swap to remove 
 * Expandable item
 * Fliter items with Search View
+* Descending sort items
