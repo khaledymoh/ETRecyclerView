@@ -7,6 +7,12 @@
 * Fliter items with Search View
 * Descending sort items
 
+<div>
+<img src="https://raw.githubusercontent.com/khaledymoh/ETRecyclerView/master/Screenshot_20180706-184231_ETRecyclerView.jpg" width="200"  />
+&nbsp; 
 
-![alt text](https://raw.githubusercontent.com/khaledymoh/ETRecyclerView/master/Screenshot_20180706-184231_ETRecyclerView.jpg |width=48)
-![alt text](https://raw.githubusercontent.com/khaledymoh/ETRecyclerView/master/Screenshot_20180706-184243_ETRecyclerView.jpg)
+<img src="https://raw.githubusercontent.com/khaledymoh/ETRecyclerView/master/Screenshot_20180706-184243_ETRecyclerView.jpg" width="200"  />
+
+
+</div>
+
