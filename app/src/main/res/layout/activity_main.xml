@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.app.etrecyclerview.MainActivity">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:id="@+id/txt_status"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@android:color/white"
+                    android:text="Status : "
+                    android:padding="10dp"
+                    android:layout_marginLeft="3dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/et_rec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+            />
+
+        <!--android:layoutAnimation="@anim/layout_animation_fall_down"-->
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_add_black_24dp" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/floating_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:floatingSearch_leftActionMode="noLeftAction"
+
+        app:floatingSearch_close_search_on_keyboard_dismiss="true"
+        app:floatingSearch_dimBackground="false"
+        app:floatingSearch_dismissOnOutsideTouch="true"
+        app:floatingSearch_menu="@menu/menu_main"
+        app:floatingSearch_searchBarMarginLeft="7dp"
+        app:floatingSearch_searchBarMarginRight="7dp"
+        app:floatingSearch_searchBarMarginTop="4dp"
+        app:floatingSearch_searchHint="Search..."
+        app:floatingSearch_showSearchKey="true"
+        app:floatingSearch_suggestionsListAnimDuration="250" />
+</RelativeLayout>
